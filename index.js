@@ -273,6 +273,9 @@ async function scrapChannel(url){
 scrapChannel('https://groww.in/markets/top-losers?index=GIDXNIFTY100');
 // scrapChannel('https://groww.in/markets/52-week-high?index=GIDXNIFTY500');
 
+app.get("/api", (req, res) => {
+  res.send(stockApi);
+});
 
 app.listen(port,()=>{
     console.log(`Server is listening at port ${port}`);
