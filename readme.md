@@ -37,13 +37,11 @@ Follow the below instructions to run the project on your local machine:
 
 * User authentication: Currently, the project sends email notifications to all the users in the database. To make it more secure, user authentication can be added and allow only registered users to receive the notifications.
 
-* Customize email template: An option can be provided to the users to customize the email notification template as per their preference.
-
 * Support for more stocks: Currently, the project scrapes the data of 52-week low stocks from only one website. It can be enhanced to scrape data from multiple websites and add more stocks to the notification list.
 
 * Real-time updates: Instead of running the project at a specified interval, it can be implemented in real-time for regular updates. For this websockets can be used to listen for updates and notify the users immediately.
 
-* Analytics and Insights: Analytics can be added to the project to track the performance of stocks, user engagement, and open rates of the email notifications. This will provide insights on which stocks are being watched the most and which emails are getting the most attention
+* Analytics and Insights: Analytics can be added to the project to track the performance of stocks, user engagement, and open rates of the email notifications. 
 
 # 
 
