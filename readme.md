@@ -25,7 +25,7 @@ Follow the below instructions to run the project on your local machine:
 4. Create a .env file in the root directory and set the following variables:
     * Makefile
     * Copy code <br>
-        MONGODB_URI= "your-mongodb-url-here" <br>
+        MONGODB_URL = "your-mongodb-url-here" <br>
         GID = "#your-email" <br>
         GPW = "#your-email-password-generated-after-2-steps-verification" 
 
