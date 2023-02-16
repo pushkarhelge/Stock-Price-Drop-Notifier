@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Building the app'",
+    "build": "echo 'Building the app'"
   },
   "keywords": [],
   "author": "Pushkar Helge",
