@@ -107,6 +107,7 @@ app.get('/unsubscribe', (req, res) => {
 // * * * * *,         *1: minutes *2: hours *3: day of month *4which month to choose *5day of week , to execute for every sec keep all stars, for every 30 min : 30 * * * *
 cron.schedule('30 10,14 * * *', async()=>{
     // console.log('cron is working..'); //schedule at 10:30 and 2:30 daily
+    scrapChannel('https://groww.in/markets/top-losers?index=GIDXNIFTY100');
 })
 
 
@@ -115,7 +116,10 @@ var StockApi;
 
 //puppeter for web scrapping
 async function scrapChannel(url){
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox']
+    });
     const page =  await browser.newPage();
     await page.goto(url);
     //puppeteer will a open a page in backgroup containning url
