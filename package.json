@@ -4,8 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon index.js"
+    "devStart": "node index.js"
   },
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ],
   "keywords": [],
   "author": "Pushkar Helge",
   "license": "ISC",
@@ -19,6 +31,7 @@
     "nodemailer": "^6.9.1",
     "nodemailer-express-handlebars": "^6.0.0",
     "nodemon": "^2.0.20",
+    "process": "^0.11.10",
     "puppeteer": "^19.6.3"
   }
 }
