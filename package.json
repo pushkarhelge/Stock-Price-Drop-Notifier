@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Building the app'"
+    "devStart": "nodemon index.js"
   },
   "keywords": [],
   "author": "Pushkar Helge",
