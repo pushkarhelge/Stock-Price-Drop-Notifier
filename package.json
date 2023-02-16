@@ -6,6 +6,18 @@
   "scripts": {
     "devStart": "nodemon index.js"
   },
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ],
   "keywords": [],
   "author": "Pushkar Helge",
   "license": "ISC",
