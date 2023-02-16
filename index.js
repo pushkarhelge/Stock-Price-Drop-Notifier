@@ -117,7 +117,7 @@ var StockApi;
 //puppeter for web scrapping
 async function scrapChannel(url){
     const browser = await puppeteer.launch({
-      executablePath: '/path/to/chromium',
+      executablePath: '/usr/bin/chromium-browser',
       headless: true,
       args: ['--no-sandbox']
     });
