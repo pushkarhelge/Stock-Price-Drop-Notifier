@@ -12,10 +12,6 @@ This is a project that sends email notifications to users when a stock from NIFT
 
 * Real-time data: The project uses web scraping to extract stock details directly from the website, ensuring that the data is up-to-date and accurate.
 
-* Simple and easy to use: The project is designed to be easy to set up and use, with a simple interface and clear instructions.
-
-* Environment variable support: The project uses the dotenv library to load environment variables, making it easy to configure and deploy.
-
 * Scalable and extensible: The project is built on Node.js and uses Express and Mongoose, making it easy to scale and add new features as needed.
 
 ## How to Run
@@ -27,11 +23,11 @@ Follow the below instructions to run the project on your local machine:
 3. Run npm install to install all the dependencies.
 
 4. Create a .env file in the root directory and set the following variables:
-    * makefile
-    * Copy code
-        MONGODB_URI=<your-mongodb-uri>
-        GID = "<your-email>"
-        GPW = "<your-email-password-generated-after-2-steps-verification>"
+    * Makefile
+    * Copy code <br>
+        MONGODB_URI= "your-mongodb-url-here" <br>
+        GID = "#your-email" <br>
+        GPW = "#your-email-password-generated-after-2-steps-verification" 
 
 5. Run `npm run devStart` to start the server.
 
@@ -39,19 +35,19 @@ Follow the below instructions to run the project on your local machine:
 
 # Future Improvements
 
-* User authentication: Currently, the project sends email notifications to all the users in the database. To make it more secure, you can add user authentication and allow only registered users to receive the notifications.
+* User authentication: Currently, the project sends email notifications to all the users in the database. To make it more secure, user authentication can be added and allow only registered users to receive the notifications.
 
-* Customize email template: You can provide an option for the users to customize the email notification template as per their preference.
+* Customize email template: An option can be provided to the users to customize the email notification template as per their preference.
 
-* Support for more stocks: Currently, the project scrapes the data of 52-week low stocks from only one website. You can enhance it to scrape data from multiple websites and add more stocks to the notification list.
+* Support for more stocks: Currently, the project scrapes the data of 52-week low stocks from only one website. It can be enhanced to scrape data from multiple websites and add more stocks to the notification list.
 
-* Real-time updates: Instead of running the project at a specified interval, you can implement real-time updates. For this, you can use websockets to listen for updates and notify the users immediately.
+* Real-time updates: Instead of running the project at a specified interval, it can be implemented in real-time for regular updates. For this websockets can be used to listen for updates and notify the users immediately.
 
-* Analytics and Insights: You can add analytics to the project to track the performance of stocks, user engagement, and open rates of the email notifications. This will provide insights on which stocks are being watched the most and which emails are getting the most attention
+* Analytics and Insights: Analytics can be added to the project to track the performance of stocks, user engagement, and open rates of the email notifications. This will provide insights on which stocks are being watched the most and which emails are getting the most attention
 
 # 
 
-To contribute to the project, you can open a pull request with your changes.
+To contribute to the project, you can open a pull request with your changes.    
 If you have any questions or issues, feel free to reach out to me at pushkarhelge7777@gmail.com. 
 
 ## Thank you for taking the time to read!
